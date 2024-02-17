@@ -15,7 +15,7 @@
 
     <!-- Navigation -->
     <nav>
-        <a href="#home"><img src="image/logo.png" alt="logo"></a>
+        <a href="#home" class="active"><img src="image/logo.png" alt="logo"></a>
         <div class="navigation">
             <ul>
                 <li><a href="#">Buy</a></li>
@@ -24,8 +24,9 @@
 
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="aboutUs.html">About us</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="aboutUs.html" class="active">About us</a></li>
+                <li><a href="properties.html">Properties</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
 
             <ul>
@@ -40,56 +41,127 @@
 
 
     <!-- Home  -->
-    <section id="home" class="tagLine">
+    <section id="aboutUs" class="tagLine">
 
-        <h2>Explore, Compare, and Discover Your Perfect Space with RooMix</h2>
-        <p>We find, you delight. Effortless rentals, connecting seekers with landlords. Your perfect home, our
-            commitment.</p>
+        <h2>About RooMix</h2>
+    </section>
 
+    <section id="about-container">
 
-        <div id="search-container">
-            <input type="text" id="search-input" placeholder="Search...">
+        <!-- Who we are -->
+        <div class="about-img">
+            <img src="image/room5.jpg" alt="kitchen">
+        </div>
+        <div class="about-content">
+            <h2>Who We Are?</h2>
+            In our country, finding the perfect room or flat can be a real challenge. Landlords often struggle to
+            find suitable tenants, and tenants waste countless hours searching for listings that don't meet their
+            needs.
+            At Roomix, we believe that there's a better way.
 
-            <!-- Filter options for location -->
-            <select id="location-filter">
-                <option value="all">&#x1F30E; All Locations</option>
-                <option value="kalanki">Kalanki</option>
-                <option value="chabel">Chabel</option>
-                <option value="kirtipur">Kirtipur</option>
-                <option value="location4">Location 4</option>
-                <option value="location5">Location 5</option>
-                <option value="location6">Location 6</option>
-                <option value="location7">Location 7</option>
-                <option value="location8">Location 8</option>
-                <option value="location9">Location 9</option>
-            </select>
+            That's why we created Roomix, a web-based platform that connects landlords and roomseekers efficiently
+            and
+            transparently. Our platform makes it easy for landlords to list their properties and for tenants to find
+            the
+            perfect place to live.
+        </div>
 
-            <!-- Filter options for cost -->
-            <select id="cost-filter">
-                <option value="all">&#x1F4B3; All Costs</option>
-                <option value="4500-7000">Rs. 4500 - Rs. 7000</option>
-                <option value="7001-10000">Rs. 7001 - Rs. 10000</option>
-                <option value="10001-13000">Rs. 10001 - Rs. 13000</option>
-                <option value="13001-16000">Rs. 13001 - Rs. 16000</option>
-                <option value="16001-19000">Rs. 16001 - Rs. 19000</option>
-                <option value="19001-20000">Rs. 19001 - Rs. 20000</option>
-            </select>
-
-            <!-- Filter options for category -->
-            <select id="category-filter">
-                <option value="all">&#x1F3E0; All Categories</option>
-                <option value="room">Room</option>
-                <option value="flat">Flat</option>
-                <option value="house">House</option>
-                <option value="office">Office</option>
-            </select>
-
-            <button id="search-btn" onclick="search()">Search</button>
+        <!-- Our mission -->
+        <div class="about-content">
+            <h2>Our Mission</h2>
+            Our mission is to make room and flat rental easier for everyone. We believe that everyone deserves to live
+            in a comfortable and affordable home, and we are committed to making that happen.
+        </div>
+        <div class="about-img">
+            <img src="image/room3.jpg" alt="kitchen">
         </div>
 
 
+
+
+        <!-- What make us different -->
+        <div class="about-img">
+            <img src="image/room6.jpg" alt="kitchen">
+        </div>
+        <div class="about-content">
+            <h2>Who We Are?</h2>
+            <ul>
+                <li><i class="fas fa-hand-holding-usd"></i>
+                    <p>We have a wide selection of listings for all types of rooms and flats, from budget-friendly
+                        studios to luxurious apartments.</p>
+                </li>
+                <li><i class="fas fa-list-alt"></i>
+                    <p>Our user-friendly interface makes it easy to search for listings, compare prices, and contact
+                        landlords.</p>
+                </li>
+                <li><i class="fas fa-grin-alt"></i>
+                    <p>Our innovative matching system helps landlords find tenants who are a good fit for their
+                        property.</p>
+                </li>
+                <li><i class="fas fa-key"></i>
+                    <p>We are committed to providing a safe and secure platform for both landlords and tenants.</p>
+                </li>
+            </ul>
+        </div>
     </section>
 
+
+
+    <!-- Our services -->
+    <section id="O-service">
+        <h1>How we help people?</h1>
+
+        <div class="ser-base">
+
+
+            <div class="ser-box">
+                <img src="image/icon/house-search.png" alt="icon">
+                <h3>
+                    Transparent Choices
+                </h3>
+                <p>Roomix empowers you with transparent property details. High-quality images and genuine reviews
+                    facilitate confident decision-making that aligns with your preferences.</p>
+            </div>
+
+            <div class="ser-box">
+                <img src="image/icon/property.png" alt="icon">
+                <h3>
+                    Effortless Discovery
+                </h3>
+                <p>Find your perfect room or flat effortlessly on Roomix. Our user-friendly platform, smart filters, and
+                    interactive maps make searching a breeze.</p>
+            </div>
+            <div class="ser-box">
+                <img src="image/icon/booking.png" alt="icon">
+                <h3>
+                    Seamless Booking
+                </h3>
+                <p>Book stress-free on Roomix. Enjoy instant confirmation and real-time updates, ensuring a swift and
+                    satisfying renting journey.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-o-team">
+        <h1>Meet the team!</h1>
+        <div class="card-details">
+            <div class="card-container">
+                <img src="image/yujan.jpg" alt="photo">
+                <div class="card-detail">
+                    <h3>Yujan Thulung</h3>
+                    <p>BCA 4th Semester</p>
+                </div>
+            </div>
+            <div class="card-container">
+                <img src="image/ronak.jpg" alt="photo">
+                <div class="card-detail">
+                    <h3>Ronak Thapa Magar</h3>
+                    <p>BCA 4th Semester</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- ..............Footer............. -->

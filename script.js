@@ -10,3 +10,12 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+
+//for navigation slide in responsive
+$('#menu-btn').click(function(){
+    $('nav .navigation ul').addClass('active')
+});
+$('#menu-close').click(function(){
+    $('nav .navigation ul').removeClass('active')
+});

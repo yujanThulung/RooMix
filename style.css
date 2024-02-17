@@ -95,8 +95,11 @@ nav .navigation {
 }
 
 #menu-btn {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+    margin-left: 3vw;
+    color: var(--c-light);
+    display: none;
 }
 
 #menu-close {
@@ -122,12 +125,16 @@ nav .navigation ul li a {
     font-weight: 600;
 }
 
-nav .navigation ul li a a.active,
-nav .navigation ul li a:hover {
+
+nav .navigation ul li a.active,/*a.active is nessesary*/
+nav .navigation ul li a:hover{
+    color: var(--c-btn);
     transition: 0.3s ease;
-    color: var(--c-hover);
 }
 
+.navigation li a:active{
+  color: var(--c-btn);
+}
 nav .navigation ul li .btn {
     height: 5vh;
     width: 8vw;
@@ -151,11 +158,9 @@ nav .navigation ul li .register {
 
 nav .navigation ul li .btn a.active,
 nav .navigation ul li .btn:hover {
-    background-color: var(--c-hover);
     color: var(--c-light);
     font-size: 20px;
     transition: 0.2s ease;
-    box-shadow: var(--box-shadow);
 }
 
 /*Home*/
@@ -169,7 +174,7 @@ nav .navigation ul li .btn:hover {
     height: 100vh;
     color: var(--c-light);
     padding: var(--body-padding);
-    background: linear-gradient(61deg, rgba(22, 20, 44, 0.7) 100%, rgba(0, 212, 255, 0) 100%),
+    background: linear-gradient(61deg, rgba(22, 20, 44, 0.6) 100%, rgba(0, 212, 255, 0) 100%),
         url(image/home.jpg);
 
     background-position: center;
@@ -276,6 +281,7 @@ nav .navigation ul li .btn:hover {
     border: none;
     border-radius: var(--border-radius);
     color: var(--c-dark);
+    filter: saturate(140%) contrast(115%);
 }
 
 #property p {
@@ -433,6 +439,7 @@ nav .navigation ul li .btn:hover {
     border: none;
     border-radius: var(--border-radius);
     color: var(--c-dark);
+    filter: saturate(140%) contrast(115%);
 }
 
 #v-property p {
@@ -674,6 +681,11 @@ footer .form button {
     color: var(--c-light);
 }
 
+footer .form button:hover {
+    background-color: var(--c-dark);
+    color: var(--c-light);
+}
+
 footer .copyright {
     margin-top: 20px;
     display: flex;
@@ -703,3 +715,340 @@ footer .copyright .pro-links i:hover {
     color: rgb(255, 255, 255);
     transition: 0.3 ease;
 }
+
+
+
+
+
+
+
+
+
+/* ------------------ABOUT US---------------- */
+
+#aboutUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+    color: var(--c-light);
+    padding: var(--body-padding);
+    background: linear-gradient(61deg, rgba(22, 20, 44, 0.7) 100%, rgba(0, 212, 255, 0) 100%),
+        url(image/aboutus1.jpg);
+
+    background-position: center;
+    background-size: cover;
+}
+
+#aboutUs h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 3rem;
+    width: 90%;
+    text-align: center;
+}
+
+
+/* #aboutUs p {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.5rem;
+} */
+
+
+#about-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 16vh 8vw 2vh 8vw;
+    row-gap:  10vh;
+}
+
+#about-container .about-img{
+    background-size: cover;
+    background-position:  center;
+    padding-right: 60px;
+}
+
+#about-container .about-img img{
+    width: 100%;
+    border-radius: var(--border-radius);
+    filter: saturate(150%) contrast(115%); 
+}
+
+#about-container .about-content{
+    line-height: 2rem;
+    text-align: justify;
+    font-size: 1.2rem; 
+    color: var(--c-dark);
+    width: 80%;
+}
+
+#about-container .about-content ul{
+    list-style: none;
+}
+
+#about-container .about-content ul li{
+    color: var(--c-dark);
+    padding-top: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+#about-container .about-content ul li i{
+    color: var(--c-dark);
+    padding-right: 1.5rem;
+    font-size: 1.5rem;
+}
+
+#about-container .about-content h2 {
+    padding-bottom: 4vh;
+}
+
+
+#about-o-team{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#about-o-team .card-details{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 8vh;
+    gap: 10vw;
+}
+
+#about-o-team .card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+#about-o-team .card-container img{
+    width: 200px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+#about-o-team .card-container .card-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh 0 8vh 0;
+    gap: 0.7rem;
+}
+
+
+
+
+
+
+/* ------------------ABOUT US---------------- */
+
+#contactUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+    color: var(--c-light);
+    padding: var(--body-padding);
+    background: linear-gradient(61deg, rgba(22, 20, 44, 0.7) 100%, rgba(0, 212, 255, 0) 100%),
+        url(image/aboutus1.jpg);
+
+    background-position: center;
+    background-size: cover;
+}
+
+#contactUs h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 3rem;
+    width: 90%;
+    text-align: center;
+}
+
+    /*Contact*/
+    #contact{
+        padding: 8vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    #contact .getin{
+        width: 350px;
+    }
+
+    #contact .getin h2{
+        color: #09303b;
+        font-size: 30px;
+        font-weight: 800;
+        line-height: .8;
+        margin-bottom: 16px;
+    }
+
+    #contact .getin p{
+        color: #2f5f6c;
+        line-height: 24px;
+        margin-bottom: 25px;
+        padding-bottom: 25px;
+        border-bottom: 1px solid rgb(206, 206, 206);
+    }
+
+    #contact .getin h3{
+        color: #09303b;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: .8;
+        margin-bottom: 13px;
+    }
+
+    #contact .getin .getin-details div{
+        display: flex;
+    }
+
+    #contact .getin .getin-details div .get{
+        font-size: 16px;
+        line-height: 22px;
+        color: #0c243d;
+        margin-right: 20px;
+    }
+
+
+    #contact .getin .getin-details div p{
+        font-size: 14px;
+        border-bottom: none;
+        line-height: 22px;
+        margin-bottom: 15px;
+    }
+
+    #contact .getin .getin-details div .pro-links{
+        margin: 0px;
+        color: var(--c-dark);
+    }
+    .pro-links i{
+        color: var(--c-dark);
+        margin: 1vh;
+        font-size: 1.2rem;
+    }
+    .pro-links i:hover{
+        color: var(--c-light);
+        font-size: 1.4rem;
+    }
+
+    #contact .form{
+        width: 60%;
+        background-color: #bfc5d0;
+        padding: 40px;
+        border-radius: 10px;
+    }
+
+    #contact .form h4{
+        font-size: 24px;
+        color: #031216;
+        line-height: 30px;
+        margin-bottom: 8px;
+    }
+
+
+    #contact .form p{
+        color: #2f5f6c;
+        line-height: 24px;
+        padding-bottom: 25px;
+    }
+
+    #contact .form .form-row{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    #contact .form .form-row input{
+        width: 48%;
+        font-size: 14px;
+        font-weight: 400;
+        border-radius: 3px;
+        border: none;
+        background: white;
+        color: #a09e9e;
+        outline: nine;
+        padding: 20px 30px;
+        margin-bottom: 20px;
+    }
+
+    #contact .form .form-col input,
+    #contact .form .form-col textarea{
+        width: 100%;
+        font-size: 14px;
+        font-weight: 400;
+        border-radius: 3px;
+        border: none;
+        background: white;
+        color: #a09e9e;
+        outline: nine;
+        padding: 20px 30px;
+        margin-bottom: 20px;
+    }
+
+    #contact .form button{
+        font-size: .9rem;
+        padding: 13px 25px;
+        background: var(--c-btn);
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        font-weight: 600;
+        cursor: pointer;
+        color: white;
+    }
+
+    #contact .form button:hover{
+        background: var(--c-dark);
+    }
+
+
+
+    #properties {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 60vh;
+        color: var(--c-light);
+        padding: var(--body-padding);
+        background: linear-gradient(61deg, rgba(22, 20, 44, 0.7) 100%, rgba(0, 212, 255, 0) 100%),
+            url(image/apartment.jpg);
+    
+        background-position: center;
+        background-size: cover;
+    }
+    
+    #properties h2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 3rem;
+        width: 90%;
+        text-align: center;
+    }
