@@ -185,6 +185,8 @@ nav .navigation ul li .btn:hover {
 
     background-position: center;
     background-size: cover;
+    position: relative;
+    z-index: 1;
 }
 
 #home h2 {
@@ -923,21 +925,22 @@ footer .copyright {
 #contact
     .getin
     .getin-details
-    div
-    .<div
-    class="properties card"
-    > v
-    class="v-properties card"
-    > nks {
+    div{
     margin: 0px;
     color: var(--c-dark);
 }
-.<div class="properties card" > v class="v-properties card" > nks i {
+#contact
+    .getin
+    .getin-details
+    div i {
     color: var(--c-dark);
     margin: 1vh;
     font-size: 1.2rem;
 }
-.<div class="properties card" > v class="v-properties card" > nks i:hover {
+#contact
+    .getin
+    .getin-details
+    div i:hover {
     color: var(--c-light);
     font-size: 1.4rem;
 }
@@ -1037,7 +1040,7 @@ footer .copyright {
 }
 
 /* Register */
-#form-box {
+/* #form-box {
     display: flex;
     flex-direction: column;
 }
@@ -1054,21 +1057,29 @@ footer .copyright {
     left: 50%;
     z-index: 99;
     margin-top: 8%;
-}
+} */
 
-#form-container-l {
+#form-container-l, #form-container-r {
+    position: fixed;
     height: 100vh;
-    width: 400px;
+    width: 100%;background: hsla(180, 58%, 58%, 1);
+
+    background: hsla(180, 58%, 58%, 1);
+
+background: linear-gradient(180deg, hsla(180, 58%, 58%, 1) 0%, hsla(226, 71%, 59%, 1) 100%);
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#54D2D2", endColorstr="#4B6EE1", GradientType=1 );
+    padding: 3% 35%;  
+
 }
 form {
-    position: relative;
+    position: absolute;
     background-color: #f4f4f4;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 500px;
-    margin: 0 auto;
+
 }
 
 .n-form h2 {
@@ -1165,11 +1176,11 @@ input {
     color: var(--c-success);
 }
 
-#login .option-field {
+#logIn .option-field {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 0;
 }
 
@@ -1181,14 +1192,9 @@ input {
     justify-content: center;
 }
 
-#login .option-field .checkbox {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
-#login .form-btn {
-    margin-top: 2vh;
+#logIn .form-btn {
+    margin: 2vh 0;
 }
 
 @media screen and (max-width: 600px) {

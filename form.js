@@ -1,28 +1,11 @@
-//For Sell and Rent condition
-document.addEventListener("DOMContentLoaded", function () {
-    var statusElements = document.querySelectorAll(".status");
-
-    statusElements.forEach(function (element) {
-        if (element.textContent.toLowerCase() === "sell") {
-            element.style.backgroundColor = "red";
-        } else if (element.textContent.toLowerCase() === "rent") {
-            element.style.backgroundColor = "green";
-        }
-    });
-});
-
-//for navigation slide in responsive
-$("#menu-btn").click(function () {
-    $("nav .navigation ul").addClass("active");
-});
-$("#menu-close").click(function () {
-    $("nav .navigation ul").removeClass("active");
-});
-
-//Form
-
-const registerForm = document.getElementById("form-container-r");
-const loginForm = document.getElementById("form-container-l");
+let formBtn = document.querySelector('#login-btn');
+let loginForm = document.querySelector('.login-form');
+let formClose = document.querySelector('#form-close');
+let form1Btn = document.querySelector('#register-btn');
+let registerForm = document.querySelector('.registration-form');
+let form1Close = document.querySelector('#form1-close');
+const register1Form = document.getElementById("#registration-form");
+const login1Form = document.getElementById("#login-form");
 document.addEventListener("DOMContentLoaded", function () {
     const firstNameInput = document.getElementById("fname");
     const lastNameInput = document.getElementById("lname");
@@ -104,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             clearErrorMessagesExcept(inputElement.id);
         }
-    }
+    }h
 
     function validateEmail(inputElement) {
         const email = inputElement.value.trim();
@@ -143,11 +126,38 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-//For card property detail
-document.querySelectorAll(".card").forEach(function (card) {
-    card.addEventListener("click", function () {
-        // Change the URL to the desired page
-        window.location.href = "p-detail.html";
-    });
+window.onscroll = () =>{
+    searchBtn.classList.remove('fa-times');
+    searchBar.classList.remove('active');
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('active');
+    loginForm.classList.remove('active');
+    registerForm.classList.remove('active');
+}
+
+menu.addEventListener('click', () =>{
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+});
+
+searchBtn.addEventListener('click', () =>{
+    searchBtn.classList.toggle('fa-times');
+    searchBar.classList.toggle('active');
+});
+
+formBtn.addEventListener('click', () =>{
+    loginForm.classList.add('active');
+});
+
+formClose.addEventListener('click', () =>{
+    loginForm.classList.remove('active');
+});
+
+form1Btn.addEventListener('click', () =>{
+    registerForm.classList.add('active');
+});
+
+form1Close.addEventListener('click', () =>{
+    registerForm.classList.remove('active');
 });
 

@@ -12,33 +12,30 @@
 </head>
 
 <body>
-    <section id="form">
-        <form action="">
-            <h2>Login</h2>
+    <div id="form-container-l">
+        <form action="" class="n-form" id="logIn"><a href="index.html"><i class="fas fa-times" id="cross"
+            onclick="hideRegisterForm()"></i></a>
+            <h2>Log in</h2>
             <div class="form-label">
-                <label for="email">Email</label><br>
-                <input type="email" id="email" name="email" placeholder="roomix13@gamil.com"><br>
-            </div>
-            <div class="form-label">
-                <label for="pass">Password</label><br>
-                <input type="password" id="password" name="password" placeholder="Password"><br>
-            </div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="roomix13@gmail.com" required>
             </div>
             <div class="form-label">
-                <label for="c-pass">Confirm password</label><br>
-                <input type="password" id="c-password" name="password" placeholder="Confirm password"><br>
-            </div>
-            </div>
-            <div class="form-label">
-                <a href="#">Forget password</a>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password" required>
             </div>
 
-            
             <div class="form-btn">
-                <button onclick="validateForm()">Log in</button>
+                <button onclick="validateForm()">Login</button>
+            </div>
+
+            <div class="option-field">
+                <a href="registration.html">Create Account</a>
+                <a href="#">Forgot your password?</a>
             </div>
         </form>
-    </section>
+
+    </div>
 </body>
 
 <script src="script.js"></script>
